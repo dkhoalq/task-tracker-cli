@@ -24,7 +24,8 @@ task-tracker/
 ├── storage.py
 ├── tasks.json
 ├── README.md
-└── .gitignore
+├── .gitignore
+└── pyproject.toml
 ```
 
 ### Files
@@ -35,6 +36,7 @@ task-tracker/
 - `tasks.json` — stores the tasks
 - `README.md` — project documentation
 - `.gitignore` — specifies files that Git should ignore
+- `pyproject.toml` — allows usage of customized commands
 
 ## Requirements
 
@@ -47,51 +49,51 @@ No external Python packages are required.
 Run the program using:
 
 ```bash
-python task_cli.py <command> [arguments]
+task-cli <command> [arguments]
 ```
 
 ### Add a task
 
 ```bash
-python task_cli.py add "Learn Python"
+task-cli add "Learn Python"
 ```
 
 ### List all tasks
 
 ```bash
-python task_cli.py list
+task-cli list
 ```
 
 ### List tasks by status
 
 ```bash
-python task_cli.py list todo
-python task_cli.py list in-progress
-python task_cli.py list done
+task-cli list todo
+task-cli list in-progress
+task-cli list done
 ```
 
 ### Update a task
 
 ```bash
-python task_cli.py update 1 "Learn advanced Python"
+task-cli update 1 "Learn advanced Python"
 ```
 
 ### Mark a task as in progress
 
 ```bash
-python task_cli.py mark-in-progress 1
+task-cli mark-in-progress 1
 ```
 
 ### Mark a task as done
 
 ```bash
-python task_cli.py mark-done 1
+task-cli mark-done 1
 ```
 
 ### Delete a task
 
 ```bash
-python task_cli.py delete 1
+task-cli delete 1
 ```
 
 ## Data Storage

@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: task-cli
+Version: 1.0.0
+Summary: A simple command-line task tracker
+Requires-Python: >=3.10
